@@ -23,7 +23,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  shimmer_animation:
+  shimmer_x:
     path: ../
 
 

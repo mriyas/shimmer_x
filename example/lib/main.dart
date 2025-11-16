@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:shimmer_animation/shimmer_x.dart';
-import 'package:shimmer_animation/shimmer_direction.dart';
+import 'package:shimmer_x/shimmer_direction.dart';
+import 'package:shimmer_x/shimmer_x.dart';
 
 void main() {
   runApp(const FullPageShimmerExample());
@@ -23,7 +23,7 @@ class ShimmerPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Shimmer(
+      body: ShimmerX(
         duration: const Duration(seconds: 3),
         interval: const Duration(seconds: 5),
         color: Colors.white,
