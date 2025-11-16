@@ -1,8 +1,10 @@
-name: shimmer_animation
-description: This shimmer animation widget can help you bring simple yet beautiful skeleton loaders to your project with ease.
-version: 2.2.2
-#author: maddyb99 <maddybcorp@outlook.com>
-homepage: https://github.com/maddyb99/shimmer_animation
+name: shimmer_x
+description: A customizable shimmer loading effect for Flutter.
+version: 1.0.10
+homepage: https://github.com/mriyas/shimmer_x
+repository: https://github.com/mriyas/shimmer_x
+issue_tracker: https://github.com/mriyas/shimmer_x/issues
+publish_to: https://pub.dev
 
 environment:
   sdk: '>=3.4.3 <4.0.0'

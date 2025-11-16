@@ -37,7 +37,7 @@ dependencies:
 Import it in your Dart code:
 
 ```dart
-import 'package:shimmer_animation/shimmer_animation.dart';
+import 'package:shimmer_animation/shimmer_x.dart';
 ```
 
 Wrap any widget with a `Shimmer` widget:

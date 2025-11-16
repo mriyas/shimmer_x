@@ -1,9 +1,9 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:shimmer_animation/src/gradient%20_sweep_painter.dart';
-import 'package:shimmer_animation/shimmer_direction.dart';
+import 'package:shimmer_x/src/gradient%20_sweep_painter.dart';
+import 'package:shimmer_x/shimmer_direction.dart';
 
-import '/shimmer_animation.dart';
+import '/shimmer_x.dart';
 
 
 class ShimmerGradientAnimator extends StatefulWidget {
