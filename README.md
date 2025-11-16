@@ -26,7 +26,7 @@ Add the package to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  shimmer_xn: ^1.0.10
+  shimmer_x: ^1.0.10
 ```
 
 Import it in your Dart code:
