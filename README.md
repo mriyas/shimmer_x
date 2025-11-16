@@ -80,16 +80,13 @@ color: Colors.deepPurple,
 | **interval** | `Duration` | Delay before repeating animation | `Duration.zero` |
 | **direction** | `ShimmerDirection` | Shimmer motion direction | `ShimmerDirection.fromLTRB()` |
 
-📚 Full API Reference:  
-https://pub.dev/documentation/shimmer_animation/latest/shimmer_animation/shimmer_animation-library.html
-
 ---
 
 ## 📄 License
 
 This package is available under the **MIT License**.
 
-🔗 https://github.com/mriyas/shimmer_animation/blob/master/LICENSE
+🔗 https://github.com/mriyas/shimmer_x/blob/master/LICENSE
 
 ---
 
