@@ -4,10 +4,11 @@ version: 1.0.10
 homepage: https://github.com/mriyas/shimmer_x
 repository: https://github.com/mriyas/shimmer_x
 issue_tracker: https://github.com/mriyas/shimmer_x/issues
-publish_to: https://pub.dev
+documentation: https://github.com/mriyas/shimmer_x#readme
 
 environment:
-  sdk: '>=3.4.3 <4.0.0'
+  sdk: ">=2.18.0 <3.0.0"
+  flutter: ">=3.0.0"
 
 dependencies:
   flutter:
@@ -16,7 +17,15 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  lints: ^5.1.1
+  pedantic: ^1.11.0
 
-# For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
+flutter:
+  uses-material-design: true
+
+# Recommended for pub.dev discoverability
+topics:
+  - shimmer
+  - loading
+  - placeholder
+  - animation
+  - flutter

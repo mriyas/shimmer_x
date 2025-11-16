@@ -43,7 +43,7 @@ import 'package:shimmer_x/shimmer_x.dart';
 Wrap any widget with a `Shimmer` widget:
 
 ```dart
-Shimmer(
+ShimmerX(
   child: Container(
     color: Colors.deepPurple,
   ),
