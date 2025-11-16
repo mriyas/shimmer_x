@@ -19,11 +19,6 @@ You can find fully working usage examples in the `example` directory of this rep
 Additional detailed examples are available in this **Examples Repository**:  
 🔗 https://github.com/mriyas/shimmer_x/tree/master/example
 
-| Full Screen | Loading Widgets | Loading Buttons |
-|---|---|---|
-|<img height="400" src="https://github.com/mriyas/shimmer_animation/blob/master/screenshots/shimmer.gif?raw=true">|<img height="400" src="https://github.com/mriyas/shimmer_examples/blob/master/loading_cards/screenshots/shimmer.gif?raw=true">|<img height="400" src="https://github.com/mriyas/shimmer_examples/blob/master/buttons/screenshots/shimmer.gif?raw=true">|
-
----
 
 ## 🚀 How to Use
 
