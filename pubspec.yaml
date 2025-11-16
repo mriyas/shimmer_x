@@ -1,13 +1,13 @@
 name: shimmer_x
 description: A customizable shimmer loading effect for Flutter.
-version: 1.0.13
+version: 1.0.14
 homepage: https://github.com/mriyas/shimmer_x
 repository: https://github.com/mriyas/shimmer_x
 issue_tracker: https://github.com/mriyas/shimmer_x/issues
 documentation: https://github.com/mriyas/shimmer_x#readme
 
 environment:
-  sdk: ">=2.18.0 <3.0.0"
+  sdk: ">=2.19.0 <3.0.0"
   flutter: ">=3.0.0"
 
 dependencies:

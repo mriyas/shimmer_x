@@ -84,7 +84,9 @@ class _ShimmerGradientAnimatorState extends State<ShimmerGradientAnimator>
 
   @override
   Widget build(BuildContext context) {
-    final (begin, end) = widget.direction.resolve(context);
+    final alignment = widget.direction.resolve(context);
+    final begin = alignment.begin;
+    final end = alignment.end;
     return CustomPaint(
       foregroundPainter: GradientSweepPainter(
         position: _animation.value,

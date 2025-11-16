@@ -8,25 +8,35 @@ enum ShimmerDirection {
 
 extension ShimmerDirectionAlignment on ShimmerDirection {
   /// Resolves shimmer begin/end alignment based on TextDirection
-  (Alignment begin, Alignment end) resolve(BuildContext context) {
+  ShimmerAlignment resolve(BuildContext context) {
     final TextDirection dir = Directionality.of(context);
 
     switch (this) {
       case ShimmerDirection.leftToRight:
-        return dir == TextDirection.rtl
-            ? (Alignment.centerRight, Alignment.centerLeft)
-            : (Alignment.centerLeft, Alignment.centerRight);
+        return ShimmerAlignment(
+          dir == TextDirection.rtl ? Alignment.centerRight : Alignment.centerLeft,
+          dir == TextDirection.rtl ? Alignment.centerLeft : Alignment.centerRight,
+        );
 
       case ShimmerDirection.rightToLeft:
-        return dir == TextDirection.rtl
-            ? (Alignment.centerLeft, Alignment.centerRight)
-            : (Alignment.centerRight, Alignment.centerLeft);
+        return ShimmerAlignment(
+          dir == TextDirection.rtl ? Alignment.centerLeft : Alignment.centerRight,
+          dir == TextDirection.rtl ? Alignment.centerRight : Alignment.centerLeft,
+        );
 
       case ShimmerDirection.topToBottom:
-        return (Alignment.topCenter, Alignment.bottomCenter);
+        return const ShimmerAlignment(Alignment.topCenter, Alignment.bottomCenter);
 
       case ShimmerDirection.bottomToTop:
-        return (Alignment.bottomCenter, Alignment.topCenter);
+        return const ShimmerAlignment(Alignment.bottomCenter, Alignment.topCenter);
     }
   }
 }
+
+class ShimmerAlignment {
+  final Alignment begin;
+  final Alignment end;
+
+  const ShimmerAlignment(this.begin, this.end);
+}
+
