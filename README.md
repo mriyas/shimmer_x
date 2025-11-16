@@ -1,0 +1,113 @@
+# ⭐ ShimmerX
+
+[![pub package](https://img.shields.io/pub/v/shimmer_animation.svg)](https://pub.dev/packages/shimmer_animation)
+![Libraries.io dependency status](https://img.shields.io/librariesio/release/pub/shimmer_animation)
+![License](https://img.shields.io/github/license/mriyas/shimmer_animation)
+
+_**Supports Null Safety**_
+
+The **ShimmerXn** widget allows you to easily create elegant skeleton loaders for Flutter apps. Shimmer is widely used as a standard animation effect for loading placeholders across the development community. With a clean and customizable API, you can quickly add beautiful shimmer effects to Android, iOS, and Web apps.
+
+This package helps you focus on building your core functionality while ensuring users experience smooth loading transitions.
+
+---
+
+## 📌 Examples
+
+You can find fully working usage examples in the `example` directory of this repository.
+
+Additional detailed examples are available in this **Examples Repository**:  
+🔗 https://github.com/mriyas/shimmer_examples
+
+| Full Screen | Loading Widgets | Loading Buttons |
+|---|---|---|
+|<img height="400" src="https://github.com/mriyas/shimmer_animation/blob/master/screenshots/shimmer.gif?raw=true">|<img height="400" src="https://github.com/mriyas/shimmer_examples/blob/master/loading_cards/screenshots/shimmer.gif?raw=true">|<img height="400" src="https://github.com/mriyas/shimmer_examples/blob/master/buttons/screenshots/shimmer.gif?raw=true">|
+
+---
+
+## 🚀 How to Use
+
+Add the package to your `pubspec.yaml`:
+
+```yaml
+dependencies:
+  shimmer_animation: ^2.1.0
+```
+
+Import it in your Dart code:
+
+```dart
+import 'package:shimmer_animation/shimmer_animation.dart';
+```
+
+Wrap any widget with a `Shimmer` widget:
+
+```dart
+Shimmer(
+  child: Container(
+    color: Colors.deepPurple,
+  ),
+),
+```
+
+### 🎛 Customizable Parameters
+
+```dart
+Shimmer(
+  duration: Duration(seconds: 3),          // Default: Duration(seconds: 3)
+  interval: Duration(seconds: 5),          // Default: Duration.zero
+  color: Colors.white,                     // Default: Colors.white
+  colorOpacity: 0.3,                       // Default: 0.3
+  enabled: true,                           // Default: true
+  direction: ShimmerDirection.fromLTRB(),  // Default: ShimmerDirection.fromLTRB()
+  child: Container(
+    color: Colors.deepPurple,
+  ),
+),
+```
+
+---
+
+## 🧩 Parameter Reference
+
+| Parameter | Type | Description | Default |
+|----------|------|-------------|---------|
+| **child** | `Widget` | The widget on which shimmer is applied | _Required_ |
+| **color** | `Color` | Overlay shimmer color | `Colors.white` |
+| **colorOpacity** | `double` | Opacity of shimmer overlay | `0.3` |
+| **enabled** | `bool` | Turns shimmer animation on/off | `true` |
+| **duration** | `Duration` | Animation cycle duration | `Duration(seconds: 3)` |
+| **interval** | `Duration` | Delay before repeating animation | `Duration.zero` |
+| **direction** | `ShimmerDirection` | Shimmer motion direction | `ShimmerDirection.fromLTRB()` |
+
+📚 Full API Reference:  
+https://pub.dev/documentation/shimmer_animation/latest/shimmer_animation/shimmer_animation-library.html
+
+---
+
+## 📄 License
+
+This package is available under the **MIT License**.
+
+🔗 https://github.com/mriyas/shimmer_animation/blob/master/LICENSE
+
+---
+
+### 💬 Feedback & Contributions
+
+Contributions, issue reports, and feature requests are always welcome!  
+If you create your own shimmer examples, feel free to share them in the examples repository.
+
+---
+
+### 🔗 Quick Links
+
+- [Shimmer Animation](#-shimmer-animation)
+- [Examples](#-examples)
+- [How to Use](#-how-to-use)
+- [Parameter Reference](#-parameter-reference)
+- [License](#-license)
+
+---
+
+Happy coding! 🚀
