@@ -17,7 +17,7 @@ This package helps you focus on building your core functionality while ensuring 
 You can find fully working usage examples in the `example` directory of this repository.
 
 Additional detailed examples are available in this **Examples Repository**:  
-🔗 https://github.com/mriyas/shimmer_examples
+🔗 https://github.com/mriyas/shimmer_x/tree/master/example
 
 | Full Screen | Loading Widgets | Loading Buttons |
 |---|---|---|
@@ -31,13 +31,13 @@ Add the package to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  shimmer_animation: ^2.1.0
+  shimmer_xn: ^1.0.10
 ```
 
 Import it in your Dart code:
 
 ```dart
-import 'package:shimmer_animation/shimmer_x.dart';
+import 'package:shimmer_x/shimmer_x.dart';
 ```
 
 Wrap any widget with a `Shimmer` widget:
@@ -53,16 +53,16 @@ Shimmer(
 ### 🎛 Customizable Parameters
 
 ```dart
-Shimmer(
-  duration: Duration(seconds: 3),          // Default: Duration(seconds: 3)
-  interval: Duration(seconds: 5),          // Default: Duration.zero
-  color: Colors.white,                     // Default: Colors.white
-  colorOpacity: 0.3,                       // Default: 0.3
-  enabled: true,                           // Default: true
-  direction: ShimmerDirection.fromLTRB(),  // Default: ShimmerDirection.fromLTRB()
-  child: Container(
-    color: Colors.deepPurple,
-  ),
+ShimmerX(
+duration: const Duration(seconds: 3),
+interval: const Duration(seconds: 5),
+color: Colors.white,
+colorOpacity: 0.3,
+enabled: true,
+direction:  ShimmerDirection.leftToRight,
+child: Container(
+color: Colors.deepPurple,
+),
 ),
 ```
 
